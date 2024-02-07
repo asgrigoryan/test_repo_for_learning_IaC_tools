@@ -8,7 +8,7 @@ resource "aws_vpc" "my_vpc" {
 
 resource "aws_subnet" "my_subnet" {
   vpc_id            = "vpc-0525574ad257c4b46"
-  cidr_block        = "172.31.0.0/20"
+  cidr_block        = "172.31.24.0/20"
   availability_zone = "us-west-2a"
 
   tags = {
