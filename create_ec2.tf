@@ -1,5 +1,5 @@
 resource "aws_vpc" "my_vpc" {
-  cidr_block = "172.31.1.0/16"
+  cidr_block = "172.31.0.0/16"
 
   tags = {
     Name = "tf-example"
@@ -8,7 +8,7 @@ resource "aws_vpc" "my_vpc" {
 
 resource "aws_subnet" "my_subnet" {
   vpc_id            = "vpc-0525574ad257c4b46"
-  cidr_block        = "172.31.1.0/24"
+  cidr_block        = "172.31.0.0/24"
   availability_zone = "us-west-2a"
 
   tags = {
